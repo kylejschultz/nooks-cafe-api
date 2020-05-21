@@ -8,7 +8,7 @@ const itemsController = {
   },
   async show(req, res) {
     let exactSearch = req.params.name;
-    let regexSearch = new RegExp(req.params.name, 'i');
+    let regexSearch = new RegExp(`.*\\b${req.params.name}\.*`, 'ig');
 
     const item = await Item.find({ name: regexSearch })
       .populate('recipe')
