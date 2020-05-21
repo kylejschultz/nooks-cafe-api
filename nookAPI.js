@@ -52,10 +52,7 @@ mongoose.connection.on('disconnected', function () {
 });
 
 app.get('/', function (req, res) {
-  res.send(`<div>
-  <h1>Sorry, but there's nothing here...</h1>
-  <p>Visit the project on <a href="https://github.com/gurthyy/nook-api">GitHub</a> for more info.</p>
-  <div>`);
+  res.redirect('https://github.com/gurthyy/nook-api');
 });
 
 // Open the API for listening

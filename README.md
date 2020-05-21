@@ -8,7 +8,7 @@ An API to find items, villages and more from Animal Crossing: New Horizons. This
 
 These are the things I've got planned for implementation or have already implemented into the API.
 
-- [x] Items - https://acapi.gurthyy.xyz/api/items/[item name]
+- [x] Items - `https://acapi.gurthyy.xyz/api/item/item-name`
 - [ ] Recipes
 - [ ] Villagers
 - [ ] Nook Mile Items
