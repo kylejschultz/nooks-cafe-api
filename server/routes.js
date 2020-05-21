@@ -6,7 +6,7 @@ const express = require('express'),
 
 module.exports = function (app) {
   //router.get('/items', itemsController.index);
-  router.get('/items/:name', itemsController.show);
+  router.get('/item/:name', itemsController.show);
 
-  app.use('/', router);
+  app.use('/api', router);
 };

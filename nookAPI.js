@@ -51,6 +51,13 @@ mongoose.connection.on('disconnected', function () {
   console.log('Mongoose default connection disconnected');
 });
 
+app.get('/', function (req, res) {
+  res.send(`<div>
+  <h1>Sorry, but there's nothing here...</h1>
+  <p>Visit the project on <a href="https://github.com/gurthyy/nook-api">GitHub</a> for more info.</p>
+  <div>`);
+});
+
 // Open the API for listening
 app.listen(process.env.PORT, () => {
   console.log('NookAPI successfully started on port ' + process.env.PORT);
