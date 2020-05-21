@@ -5,7 +5,7 @@ const express = require('express'),
   itemsController = require('./controllers/itemsController');
 
 module.exports = function (app) {
-  router.get('/items', itemsController.index);
+  //router.get('/items', itemsController.index);
   router.get('/items/:name', itemsController.show);
 
   app.use('/', router);

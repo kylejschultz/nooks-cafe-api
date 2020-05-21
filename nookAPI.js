@@ -40,6 +40,9 @@ mongoose.connection.on('connected', function () {
   console.log(
     `Database connection open to ${mongoose.connection.host} ${mongoose.connection.name}`,
   );
+  // Un-comment to enable Mongoose Debugging for RegEx checks
+  mongoose.set('debug', true);
+  console.log('Mongoose debugging is on. ');
 });
 mongoose.connection.on('error', function (err) {
   console.log('Mongoose default connection error: ' + err);

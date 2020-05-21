@@ -7,9 +7,10 @@ const itemsController = {
     res.send(items);
   },
   async show(req, res) {
-    let search = req.params.name;
-    let regexSearch = new RegExp(req.params.name);
-    const item = await Item.find({ name: search })
+    let exactSearch = req.params.name;
+    let regexSearch = new RegExp(req.params.name, 'i');
+
+    const item = await Item.find({ name: regexSearch })
       .populate('recipe')
       .sort('asc');
     res.send(item);
