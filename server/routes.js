@@ -3,7 +3,8 @@ const express = require('express'),
   rootPath = path.normalize(__dirname + '/../'),
   router = express.Router(),
   recipesController = require('./controllers/recipesController'),
-  itemsController = require('./controllers/itemsController');
+  itemsController = require('./controllers/itemsController'),
+  test = require('../test');
 
 module.exports = function (app) {
   // Items
@@ -14,5 +15,8 @@ module.exports = function (app) {
   //router.get('/recipe', recipesController.index);
   router.get('/recipe/:name', recipesController.show);
 
-  app.use('/api', router);
+  // Test command
+  router.get('/test', test.execute);
+
+  app.use('/', router);
 };
