@@ -8,12 +8,12 @@ An API to find items, villages and more from Animal Crossing: New Horizons. This
 
 These are the things I've got planned for implementation or have already implemented into the API.
 
-[] Items
-[] Recipes
-[] Villagers
-[] Nook Mile Items
-[] Creatures
-[] Reactions
+- [ ] Items
+- [ ] Recipes
+- [ ] Villagers
+- [ ] Nook Mile Items
+- [ ] Creatures
+- [ ] Reactions
 
 ## Contact
 
