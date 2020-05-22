@@ -1,8 +1,8 @@
 {
-  "name": "nookapi",
+  "name": "nooks-cafe-api",
   "version": "1.0.0",
-  "description": "API for ACNH items by Gurthyy#8735",
-  "main": "nookAPI.js",
+  "description": "API for use with Nook's Cafe Bot and Website.",
+  "main": "api.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
