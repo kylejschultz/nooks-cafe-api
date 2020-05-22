@@ -22,12 +22,12 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gurthyy/nook-api.git"
+    "url": "git+https://github.com/gurthyy/nooks-cafe-api.git"
   },
   "author": "Gurthyy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gurthyy/nook-api/issues"
+    "url": "https://github.com/gurthyy/nooks-cafe-api/issues"
   },
-  "homepage": "https://github.com/gurthyy/nook-api#readme"
+  "homepage": "https://github.com/gurthyy/nooks-cafe-api#readme"
 }
