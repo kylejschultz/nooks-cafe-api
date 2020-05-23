@@ -17,4 +17,4 @@ These are the things I've got planned for implementation or have already impleme
 
 ## Contact
 
-Feel free to reach out to me on Discord at Gurthyy#8725.
+Feel free to reach out to me on Discord at Gurthyy#8735 and I encourage you to join the [Nook's Cafe Discord](https://discord.nooks.cafe). It's a place for all things Animal Crossing and the place to discuss the API, Bot, or website!
