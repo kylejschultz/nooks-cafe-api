@@ -8,25 +8,25 @@ An API to find items, villages and more from Animal Crossing: New Horizons. This
 
 ### Items
 
-`Name Search:` https://api.nooks.cafe/item/pot
+**Name Search:** `https://api.nooks.cafe/item/pot`
 
 ### Recipes
 
-`Name Search:` https://api.nooks.cafe/recipe/pot
+**Name Search:** `https://api.nooks.cafe/recipe/pot`
 
 ### Villagers
 
-`All Villagers:` https://api.nooks.cafe/villager/
-`Name Search:` https://api.nooks.cafe/villager/wendy
+**All Villagers:** `https://api.nooks.cafe/villager/`
+**Name Search:** `https://api.nooks.cafe/villager/wendy`
 
 ### Reactions
 
-`All Villagers:` https://api.nooks.cafe/reaction/
-`Name Search:` https://api.nooks.cafe/reaction/wendy
+**All Villagers:** `https://api.nooks.cafe/reaction/`
+**Name Search:** `https://api.nooks.cafe/reaction/wendy`
 
 ### Creatures
 
-`Name Search:` https://api.nooks.cafe/creature/moth
+**Name Search:** `https://api.nooks.cafe/creature/moth`
 
 ## Contact
 
