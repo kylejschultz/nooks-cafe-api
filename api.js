@@ -1,4 +1,4 @@
-console.log('======== Starting Nook API ========');
+console.log(`======== Starting Nook's Cafe API ========`);
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -28,7 +28,7 @@ require('./server/routes')(app);
 
 // Connect to Mongoose and let me know what's happening.
 mongoose.connect(
-  `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_URI}?retryWrites=true&w=majority`,
+  `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_URI}?w=majority`,
   {
     useUnifiedTopology: true,
     useNewUrlParser: true,
@@ -40,10 +40,11 @@ mongoose.connection.on('connected', function () {
   console.log(
     `Database connection open to ${mongoose.connection.host} ${mongoose.connection.name}`,
   );
-  // Un-comment to enable Mongoose Debugging for RegEx checks
+  // Enable Mongoose Debugging
   mongoose.set('debug', true);
   console.log('Mongoose debugging is on. ');
 });
+
 mongoose.connection.on('error', function (err) {
   console.log('Mongoose default connection error: ' + err);
 });

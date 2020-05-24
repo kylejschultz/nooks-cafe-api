@@ -4,16 +4,29 @@
 
 An API to find items, villages and more from Animal Crossing: New Horizons. This bot was built for use with Nook's Cafe's website and Discord bot, both currently under development.
 
-## Nook API Features
+## Nook API Endpoints
 
-These are the things I've got planned for implementation or have already implemented into the API.
+### Items
 
-- [x] Items - `Example endpoint: https://api.nooks.cafe/item/pot`
-- [x] Recipes - `Example endpoint: https://api.nooks.cafe/recipe/pot`
-- [ ] Villagers
-- [ ] Nook Mile Items
-- [ ] Creatures
-- [ ] Reactions
+`Name Search:` https://api.nooks.cafe/item/pot
+
+### Recipes
+
+`Name Search:` https://api.nooks.cafe/recipe/pot
+
+### Villagers
+
+`All Villagers:` https://api.nooks.cafe/villager/
+`Name Search:` https://api.nooks.cafe/villager/wendy
+
+### Reactions
+
+`All Villagers:` https://api.nooks.cafe/reaction/
+`Name Search:` https://api.nooks.cafe/reaction/wendy
+
+### Creatures
+
+`Name Search:` https://api.nooks.cafe/creature/moth
 
 ## Contact
 
