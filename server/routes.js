@@ -35,5 +35,5 @@ module.exports = function (app) {
   // Test command
   router.get('/test', test.execute);
 
-  app.use('/', router);
+  app.use('/api', router);
 };

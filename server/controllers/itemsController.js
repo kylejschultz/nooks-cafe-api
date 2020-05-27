@@ -11,9 +11,7 @@ const itemsController = {
     let regexSearch = new RegExp(`.*\\b${req.params.name}\.*`, 'ig');
 
     const item = await Item.find({ name: regexSearch })
-      .populate({
-        path: 'recipe',
-      })
+      .populate('recipe')
       .sort('asc');
     res.send(item);
   },

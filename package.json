@@ -17,7 +17,9 @@
     "lodash": "^4.17.15",
     "method-override": "^3.0.0",
     "mongoose": "^5.9.15",
-    "rcolor": "^2.0.2"
+    "rcolor": "^2.0.2",
+    "redoc": "^2.0.0-rc.29",
+    "swagger-stats": "^0.95.17"
   },
   "devDependencies": {},
   "repository": {

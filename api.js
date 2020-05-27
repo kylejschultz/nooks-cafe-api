@@ -1,4 +1,5 @@
 console.log(`======== Starting Nook's Cafe API ========`);
+const swStats = require('swagger-stats');
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -14,7 +15,12 @@ dotenv.config();
 
 // Set-up Express
 const app = express();
-
+app.use(
+  swStats.getMiddleware({
+    uriPath: '/status',
+    name: `Nook's Cafe API Status`,
+  }),
+);
 app.set('view engine', 'ejs');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -53,7 +59,7 @@ mongoose.connection.on('disconnected', function () {
 });
 
 app.get('/', function (req, res) {
-  res.redirect('https://github.com/gurthyy/nook-api');
+  res.redirect('https://github.com/gurthyy/nooks-cafe-api');
 });
 
 // Open the API for listening

@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
-const { Recipe } = require('./Recipe');
+const { recipeModel } = require('./Recipe');
 
 const itemModel = mongoose.Schema({
+  _id: mongoose.Schema.Types.ObjectId,
   name: String,
   sourceSheet: String,
   patternTitle: String,
@@ -35,6 +36,7 @@ const itemModel = mongoose.Schema({
       themes: [],
     },
   ],
+  //recipe: [recipeModel],
 });
 
 module.exports = mongoose.model('Item', itemModel);
