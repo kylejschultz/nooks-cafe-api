@@ -6,4 +6,4 @@ An API to find items, villages and more from Animal Crossing: New Horizons. This
 
 ## Contact
 
-Feel free to reach out to me on Discord at Gurthyy#8735 and
+Feel free to reach out to me on Discord at Gurthyy#8735
