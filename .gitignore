@@ -2,6 +2,8 @@
 ### Custom Files ###
 ####################
 test.js
+ecosystem.config.js
+test.json
 
 ###########################
 ### Node Specific Files ###
