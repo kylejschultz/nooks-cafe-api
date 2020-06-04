@@ -4,4 +4,5 @@ module.exports = {
   reactionsController: require('./reactionsController'),
   villagersController: require('./villagersController'),
   creaturesController: require('./creaturesController'),
+  clothingController: require('./clothingController'),
 };

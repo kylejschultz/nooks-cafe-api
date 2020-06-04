@@ -8,6 +8,7 @@ const express = require('express'),
     villagersController,
     reactionsController,
     creaturesController,
+    clothingController,
   } = require('./controllers');
 test = require('./test');
 
@@ -31,6 +32,10 @@ module.exports = function (app) {
   //Creatures
   router.get('/creature', creaturesController.all);
   router.get('/creature/:name', creaturesController.name);
+
+  //Clothing
+  router.get('/clothing', clothingController.all);
+  router.get('/clothing/:name', clothingController.name);
 
   // Test command
   router.get('/test', test.execute);

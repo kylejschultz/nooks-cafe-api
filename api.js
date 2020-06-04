@@ -63,6 +63,12 @@ app.get('/', function (req, res) {
 });
 
 // Open the API for listening
-app.listen(process.env.PORT, () => {
-  console.log('NookAPI successfully started on port ' + process.env.PORT);
-});
+if (process.env.NODE_ENV === 'production') {
+  app.listen(process.env.PROD_PORT, () => {
+    console.log('NookAPI successfully running in production.');
+  });
+} else {
+  app.listen(process.env.DEV_PORT, () => {
+    console.log(`NookAPI running in dev mode. Will be restarted each save.`);
+  });
+}
