@@ -16,6 +16,7 @@ dotenv.config();
 // Set-up Express
 const app = express();
 app.use(
+  //setup status dashboard
   swStats.getMiddleware({
     uriPath: '/status',
     name: `Nook's Cafe API Status`,

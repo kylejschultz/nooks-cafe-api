@@ -5,4 +5,5 @@ module.exports = {
   villagersController: require('./villagersController'),
   creaturesController: require('./creaturesController'),
   clothingController: require('./clothingController'),
+  achievementsController: require('./achievementsController'),
 };

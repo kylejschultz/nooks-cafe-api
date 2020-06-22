@@ -4,4 +4,5 @@ module.exports = {
   Villager: require('./Villager'),
   Reaction: require('./Reaction'),
   Creature: require('./Creature'),
+  Achievement: require('./Achievement'),
 };
